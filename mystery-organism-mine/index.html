@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mysterious Organism</title>
+  </head>
+  <body>
+    <h1>Project Goals</h1>
+    <p>
+      Context: You’re part of a research team that has found a new mysterious
+      organism at the bottom of the ocean near hydrothermal vents. Your team
+      names the organism, Pila aequor (P. aequor), and finds that it is only
+      comprised of 15 DNA bases. The small DNA samples and frequency at which it
+      mutates due to the hydrothermal vents make P. aequor an interesting
+      specimen to study. However, P. aequor cannot survive above sea level and
+      locating P. aequor in the deep sea is difficult and expensive. Your job is
+      to create objects that simulate the DNA of P. aequor for your research
+      team to study. As you progress through the steps, use the terminal and
+      console.log() statements to check the output of your loops and functions.
+    </p>
+    <h2>Project Requirements</h2>
+    <p>
+     <ol>
+      <li>Look over the starter code. There are two helper functions: <strong>returnRandBase()</strong>  and <strong>mockUpStrand()</strong>.
+       <br>
+       <br>
+       DNA is comprised of four bases (Adenine, Thymine, Cytosine, and Guanine). When <strong>returnRandBase()</strong>  is called, it will randomly select a base and return the base ('A','T','C', or 'G'). 
+       <br>
+       <br>
+       <strong>mockUpStrand()</strong> is used to generate an array containing 15 bases to represent a single DNA strand with 15 bases. 
+       <br>
+       <br>
+        You’ll use these helper functions later to create your objects that represent P. aequor.
+</li>
+<br>
+<li>
+ Since you need to create multiple objects, create a factory function <strong>pAequorFactory()</strong> that has two parameters:
+ <ul>
+  <li>
+The first parameter is number (no two organisms should have the same number).
+  </li>
+  <li>
+The second parameter is an array of 15 DNA bases.
+  </li>
+ </ul>
+<br>
+<strong>pAequorFactor()</strong> should return an object that contains the properties <strong>specimenNum</strong> and <strong>dna</strong> that correspond to the parameters provided.
+<br>
+<br>
+You’ll also add more methods to this returned object in the later steps.
+</li>
+<br>
+<li>
+ Your team wants you to simulate P. aequor‘s high rate of mutation (change in its DNA).
+<br>
+<br>
+To simulate a mutation, in <strong>pAequorFactory()</strong>‘s returned object, add the method <strong>.mutate()</strong>. 
+<br>
+<br>
+<strong>.mutate()</strong> is responsible for randomly selecting a base in the object’s dna property and changing the current base to a different base. Then <strong>.mutate()</strong>  will return the object’s dna.
+<br>
+<br>
+For example, if the randomly selected base is the 1st base and it is 'A', the base must be changed to 'T', 'C', or 'G'. But it cannot be 'A' again.
+</li>
+<br>
+<li>
+ Your research team wants to be able to compare the DNA sequences of different P. aequor. You’ll have to add a new method (<strong>.compareDNA()</strong>) to the returned object of the factory function.
+<br>
+<br>
+<strong>.compareDNA()</strong> has one parameter, another pAequor object.
+<br>
+<br>
+The behavior of <strong>.compareDNA()</strong> is to compare the current pAequor‘s <strong>.dna</strong> with the passed in pAequor‘s <strong>.dna</strong> and compute how many bases are identical and in the same locations. <strong>.compareDNA()</strong> does not return anything, but <strong>prints a message</strong> that states the percentage of DNA the two objects have in common — use the <strong>.specimenNum</strong> to identify which pAequor objects are being compared.
+</li>
+<br>
+<br>
+<li>
+ P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.
+<br>
+<br>
+In the returned object of <strong>pAequorFactory()</strong>, add another method <strong>.willLikelySurvive()</strong>.
+<br>
+<br>
+<strong>.willLikelySurvive()</strong> returns <strong>true</strong>  if the object’s <strong>.dna</strong> array contains at least 60% 'C' or 'G' bases. Otherwise, <strong>.willLikelySurvive()</strong>  returns <strong>false</strong>.
+</li>
+<br>
+<br>
+<li>
+ With the factory function set up, your team requests that you create 30 instances of <strong>pAequor</strong> that can survive in their natural environment. Store these instances in an array for your team to study later. 
+</li>
+    </ol>
+   </p>
+    <script src="/main.js"></script>
+  </body>
+</html>
