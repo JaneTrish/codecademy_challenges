@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>My cheatsheet</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="head">HTML and CSS cheatsheet</h1>
+    </header>
+    <h2>HTML Table Reference</h2>
+    <section>
+      <h3>Table Tags</h3>
+      <table class="tables">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="row-header">&lt;table&gt;</th>
+            <td>Table</td>
+            <td>The wrapper element of all HTML tables.</td>
+          </tr>
+          <tr>
+            <th class="row-header">&lt;thead&gt;</th>
+            <td>Table Head</td>
+            <td>The set of rows definig the column headers in a table.</td>
+          </tr>
+          <tr>
+            <th class="row-header">&lt;tbody&gt;</th>
+            <td>Table Body</td>
+            <td>The set of rows containing actual table data.</td>
+          </tr>
+          <tr>
+            <th class="row-header">&lt;tr&gt;</th>
+            <td>Table Row</td>
+            <td>The table row container.</td>
+          </tr>
+          <tr>
+            <th class="row-header">&lt;td&gt;</th>
+            <td>Table Data</td>
+            <td>The table data container.</td>
+          </tr>
+          <tr>
+            <th class="row-header">&lt;tfoot&gt;</th>
+            <td>Table Foot</td>
+            <td>The set of rows definig the footer of a table.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h3>Table Attributes</h3>
+      <table class="tables">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="row-header">colspan</th>
+            <td>Column Span</td>
+            <td>Defines how many columns a td element should span.</td>
+          </tr>
+          <tr>
+            <th class="row-header">rowspan</th>
+            <td>Row Span</td>
+            <td>Defines how many rows a td element should span.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br />
+    <br />
+    <h2>CSS Selectors and Specifity</h2>
+    <section>
+      <h3>Selector Types</h3>
+      <table class="tables">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Example</th>
+            <th rowspan="3">Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Type Selectors and pseudo-elements</td>
+            <td class="example">
+              &lt;h1&gt; <br />
+              ::before
+            </td>
+            <td>The higher is the number, the more specific is the element.</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Class Selectors, attributes selectors, and pseudo-classes</td>
+            <td class="example">
+              .example <br />
+              [type="radio"] <br />
+              :hover
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>ID Selectors</td>
+            <td class="example">#example</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="important">
+      <h3>The <span class="stand-out">!important</span> exeption</h3>
+      <p>
+        When an <span class="stand-out">!important</span> rule is used on a
+        style declaration, this declaration overrides any other declarations.
+        Although technically <span class="stand-out">!important</span> has
+        nothing to do with specificity, it interacts directly with it. Using
+        <span class="stand-out">!important</span>, however, is bad practice and
+        should be avoided because it makes debugging more difficult by breaking
+        the natural cascading in your stylesheets. When two conflicting
+        declarations with the <span class="stand-out">!important</span> rule are
+        applied to the same element, the declaration with a greater specificity
+        will be applied.
+      </p>
+      <h3>Some Rules of Thumb</h3>
+      <ul>
+        <li>
+          <span class="bold">Always</span> look for a way to use specificity
+          before even considering <span class="stand-out">!important</span>
+        </li>
+        <li>
+          <span class="bold">Only</span> use
+          <span class="stand-out">!important</span> on page-specific CSS that
+          overrides foreign CSS (from external libraries, like Bootstrap or
+          normalize.css).
+        </li>
+        <li>
+          <span class="bold">Never</span> use
+          <span class="stand-out">!important</span> when you're writing a
+          plugin/mashup.
+        </li>
+        <li>
+          <span class="bold">Never</span> use
+          <span class="stand-out">!important</span> on site-wide CSS.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
