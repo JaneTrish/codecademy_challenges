@@ -1,0 +1,261 @@
+/* GLOBAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 1rem;
+  color: #f0ead6;
+  font-size: 5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.45rem;
+  color: #81553f;
+}
+
+/* NAV */
+nav {
+  background-color: #955e42;
+  position: fixed;
+  width: 100%;
+  z-index: 10%;
+}
+ul {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+li {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  color: #f0ead6;
+}
+
+@media only screen and (min-width: 735px) {
+  li {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  li {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 325px) {
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+/* BANNER */
+.banner {
+  height: 45vh;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./images/banner-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 2000px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+@media only screen and (max-width: 1375px) {
+  .banner {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 1267px) {
+  .banner {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .banner {
+    height: 45vh;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .banner {
+    height: 50vh;
+  }
+  h1 {
+    margin-top: 4.5rem;
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 795px) {
+  h1 {
+    margin-top: 5.75rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    margin-top: 4rem;
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner {
+    height: 50vh;
+  }
+  h1 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  .banner {
+    height: 45vh;
+  }
+  h1 {
+    margin-top: 4rem;
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  h1 {
+    margin-top: 3.75rem;
+    font-size: 2.45rem;
+  }
+}
+
+/* EVENTS SECTION */
+#events {
+  margin-bottom: 2rem;
+}
+
+.events-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.event {
+  width: 30%;
+  min-width: 300px;
+  margin-bottom: 3rem;
+}
+.event h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.event p {
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.event img {
+  display: block;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 835px) {
+  #events h2 {
+    font-size: 2.4rem;
+  }
+}
+/* COURTS SECTION */
+#courts p {
+  padding: 1rem;
+  text-align: center;
+}
+#courts img {
+  display: block;
+  max-width: 800px;
+  margin: 1rem auto 4rem;
+  width: 80%;
+}
+@media only screen and (max-width: 835px) {
+  #courts h2 {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 515px) {
+  #courts img {
+    width: 100%;
+  }
+}
+/* JOIN US SECTION */
+.join-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto 3rem;
+  flex-wrap: wrap;
+}
+.join-container img {
+  display: block;
+  margin-right: 3rem;
+  max-width: 300px;
+  width: 60%;
+}
+.contacts {
+  align-self: baseline;
+}
+.contacts h4,
+.contacts p {
+  text-align: left;
+}
+.contacts h4,
+.contacts p {
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 835px) {
+  #join h2 {
+    font-size: 2.4rem;
+  }
+  .join-container img {
+    display: none;
+  }
+  .contacts h4,
+  .contacts p {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+/* FOOTER */
+footer {
+  background-color: #955e42;
+  color: #f0ead6;
+}
+p {
+  text-align: center;
+  padding-top: 2rem;
+}
