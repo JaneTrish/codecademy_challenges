@@ -89,7 +89,7 @@ const validateCred = (array) => {
 
 /*====END OF MY FIRST CODE ==== */
 
-/*  Refactored code after looking at the solution 
+/*  Refactored code after checking out the solution 
 
 const validateCred = (array) => {
   let totalSum = 0;
